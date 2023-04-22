@@ -6,7 +6,7 @@ import asyncio
 import sys
 
 START_MSG="Hi {},\nThis is a simple bot to forward all messages from one channel to other\n\n⚠️Warning\nYour account may get banned if you forward more files(from private channels). Use at Own Risk!!"
-HELP_MSG="Available commands:-\n\n/index - To index a channel\n/forward - To start forwarding\n/total - Count total messages in DB\n/status - Check Current status\n/help - Help data\n/stop - To stop all running processes. \n\nUse /index to index messages from a channel to database.\n\nAfter indexing you can start forwarding by using /forward.\n\n<b>Note:</b>\nYou will require the following data to index a channel:-\n\n<b>Channel Invite Link</b>:- If channel is a Private channel User needs to join channel to acces the messages. Please note that do not leave channel until forwarding completes.\n\n<b>Channel ID</b>:- If channel is a private channel you may need to enter Channel ID. Get it from @MissRose_bot.\n\n<b>SKIP_NO</b>:-From where you want to start Forwarding files.Give 0 if from starting\n\n<b>Caption</b>:- Custom Caption for forwarded files. Use 0 to use default captions.\nAfter fowarding completes use the /cleardb command to clean your database."
+HELP_MSG="Available commands:-\n\n/index - ᴛᴏ ɪɴᴅᴇx ᴀ ᴄʜᴀɴɴᴇʟ\n/forward - ᴛᴏ ꜱᴛᴀʀᴛ ꜰᴏʀᴡᴀʀᴅɪɴɢ\n/total - ᴛᴏ ᴄʜᴇᴄᴋ ᴛᴏᴛᴀʟ ꜰɪʟᴇꜱ ɪɴ ᴅʙ \n/status - ᴛᴏ ᴄʜᴇᴄᴋ ᴄᴜʀʀᴇɴᴛ ꜱᴛᴀᴛᴜꜱ\n/help - ʜᴇʟᴩ ᴅᴀᴛᴀ\n/stop - ᴛᴏ ꜱᴛᴏᴩ ᴀʟʟ ʀᴜɴɴɪɴɢ ᴩʀᴏᴄᴇꜱꜱ \n\nᴜꜱᴇ /index - ᴛᴏ ɪɴᴅᴇx ᴍᴇꜱꜱᴀɢᴇꜱ ꜰʀᴏᴍ ᴀ ᴄʜᴀɴɴᴇʟ ᴛᴏ ᴅᴀᴛᴀʙᴀꜱᴇ. \n\nᴀꜰᴛᴇʀ ɪɴᴅᴇxɪɴɢ yᴏᴜ ᴄᴀɴ ꜱᴛᴀʀᴛ ꜰᴏʀᴡᴀʀᴅɪɴɢ ʙy ᴜꜱɪɴɢ /forward.\n\n<b>Note:</b>\nYou will require the following data to index a channel:-\n\n<b>Channel Invite Link</b>:- If channel is a Private channel User needs to join channel to acces the messages. Please note that do not leave channel until forwarding completes.\n\n<b>Channel ID</b>:- If channel is a private channel you may need to enter Channel ID. Get it from @MissRose_bot.\n\n<b>SKIP_NO</b>:-From where you want to start Forwarding files.Give 0 if from starting\n\n<b>Caption</b>:- Custom Caption for forwarded files. Use 0 to use default captions.\nAfter fowarding completes use the /cleardb command to clean your database."
 buttons=InlineKeyboardMarkup(
         [
             [
@@ -14,8 +14,8 @@ buttons=InlineKeyboardMarkup(
                 InlineKeyboardButton("How Does This Works?", callback_data="abt")
             ],
             [
-                InlineKeyboardButton("Source Code", url="https://github.com/Greymattersbot/public-forward-bot"),
-                InlineKeyboardButton("Updates Channel", url="https://t.me/greymatter_bots")
+                InlineKeyboardButton("Source Code", url="https://t.me/dmx_chating"),
+                InlineKeyboardButton("Updates Channel", url="https://t.me/dmx_bots")
             ]
         ]
         )
@@ -64,7 +64,7 @@ async def cb_abt(bot, cb):
     reply_markup=InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("Source", url="https://github.com/Greymattersbot/public-forward-bot"),
+                InlineKeyboardButton("Source", url="https://t.me/dmx_chating"),
             ]
         ]
     )
